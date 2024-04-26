@@ -1,0 +1,1 @@
+@type Car|Ship|fun(type: string, data: any):void|table<string, string[]>|"one"|'two'|0|-1.5

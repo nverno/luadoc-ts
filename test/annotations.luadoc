@@ -1,0 +1,55 @@
+@class (exact) Transport @parent class
+
+@class Ship : Transport @Ship extends Transport
+
+@class Eagle : Animal, Flyable, Bird  this is a plain comment
+
+@field name string
+
+@param type number @parameter type
+
+@return Car|Ship @may return Car or Ship
+
+@type Car
+
+@param v Transport
+
+@alias Handler fun(type: string, data: any):void
+
+@field protected name string
+
+@generic T : Transport
+
+@generic T : Transport, K : Car
+
+@vararg string
+
+@language Hare
+
+@see Car
+
+@type Car|Ship|fun(type: string, data: any):void|table<string, string[]>|"one"|'two'|0|-1.5
+
+@diagnostic disable: undefined-field, param-type-mismatch
+
+@module 'string.utils'
+
+@class sos.TableVisit.State<T>: { root: T }
+
+is of type {@link CodeAction} or a Thenable that resolves to such.
+
+@since 3.17.0
+
+[[@as Foo.Bar]]
+
+@field hlgroup_at fun(i: integer): hlgroup: string
+
+@field ['local'] string
+
+@field public iter fun(self: Stack): ((fun(i: integer, item: any): integer, any), Stack, integer)
+
+| '"left"' # The left side of the device
+
+@alias myLiteralAlias `A` | `B`
+
+@cast x +boolean, -number, +?
